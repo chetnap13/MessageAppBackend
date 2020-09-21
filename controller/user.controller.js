@@ -7,7 +7,7 @@ module.exports.register = async (req, res) => {
     if(req.body.fullName.length < 3)
     {
         res.status(400).send({
-            message:'Invalid Full Name'
+            message:'Invalid Name'
         })
     }
     
@@ -26,7 +26,4 @@ module.exports.register = async (req, res) => {
         res.send(data);
     }        
     
-
-
-
 }
